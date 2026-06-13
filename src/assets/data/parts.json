@@ -1,0 +1,25 @@
+{
+  "parts": [
+    {
+      "id": 1,
+      "name": "Part A",
+      "description": "Description of Part A",
+      "image": "assets/illustrations/part-a.png",
+      "price": 10.00
+    },
+    {
+      "id": 2,
+      "name": "Part B",
+      "description": "Description of Part B",
+      "image": "assets/illustrations/part-b.png",
+      "price": 15.00
+    },
+    {
+      "id": 3,
+      "name": "Part C",
+      "description": "Description of Part C",
+      "image": "assets/illustrations/part-c.png",
+      "price": 20.00
+    }
+  ]
+}

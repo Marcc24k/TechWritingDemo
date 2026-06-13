@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>AMM — PDF Viewer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* local viewer overrides so visitor sees full-height PDF */
+        .pdf-toolbar {
+            display:flex;
+            gap:10px;
+            align-items:center;
+            padding:10px 18px;
+            background:#fff;
+            border-bottom:1px solid #e6e9ee;
+        }
+        .pdf-toolbar a, .pdf-toolbar button {
+            color:#0b6cff;
+            background:transparent;
+            border:1px solid #e6e9ee;
+            padding:8px 10px;
+            border-radius:6px;
+            text-decoration:none;
+            cursor:pointer;
+        }
+        .pdf-frame {
+            width:100%;
+            height: calc(100vh - 72px);
+            border:0;
+            background:#fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dual Spool Air</h1>
+    </header>
+
+    <nav class="sub-nav" aria-label="Page">
+        <div class="nav-inner small">
+            <a href="home.html" class="figure-back">← Home</a>
+            <a href="index.html" class="figure-link">Figure 1</a>
+            <a href="figure2.html" class="figure-link">Figure 2</a>
+        </div>
+    </nav>
+
+    <div class="pdf-toolbar" role="toolbar" aria-label="PDF controls">
+        <a href="assets/wt9/AMM.pdf" target="_blank" rel="noopener noreferrer">Open in new tab</a>
+        <a href="assets/wt9/AMM.pdf" download>Download PDF</a>
+        <span style="color:#6b7280;font-size:0.95rem">AMM — Aircraft Maintenance Manual</span>
+    </div>
+
+    <iframe class="pdf-frame" src="assets/wt9/AMM.pdf"></iframe>
+
+</body>
+</html>
